@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>        
+    h1{
+            background-color: blueviolet;
+            text-align: center;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+<h2><a href="{% url 'layout_home' %}">Home</a></h2>
+<h2><a href="{% url 'layout_greetings' 'amit' %}">Greetings</a></h2>
+<h2><a href="{% url 'layout_newyear' %}">Newyear</a></h2>
+<h2><a href="{% url 'task_home' %}">View Task</a></h2>
+<h2><a href="{% url 'addtask' %}">Add Task</a></h2>
+    <h1>
+        {% block body %}
+        {% endblock %}
+    </h1>
+</body>
+</html>
