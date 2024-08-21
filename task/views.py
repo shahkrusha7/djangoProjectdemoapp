@@ -5,6 +5,7 @@ from django.shortcuts import render,redirect
 tasklist=['mobile recharge','gas bill','grocery','laundry']
 
 def home(request):
+    print("ts")
     return render(request,'task/home.html',{'tasklist':tasklist})
 
 def addtask(request):
